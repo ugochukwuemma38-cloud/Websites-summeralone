@@ -1,0 +1,302 @@
+/*varible*/
+:root{
+  --accent-cool: #A0B4C8;
+  --accent:  #E8A045;
+  --background: #0d0d0d;
+  --text-color: #F0F0F0;
+  --font-display: 'Caveat';
+  --font-body: 'DM Sans';
+}
+
+/*globalreset*/
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/*mainpart*/
+body{
+  font-family: var(--font-body);
+  background-color: var(--background);
+  color: var(--text-color);
+  padding-bottom: 100px;
+}
+
+#slide-menu ul{
+list-style: none; 
+padding-top: 50px;
+padding-left: 100px;
+}
+#slide-menu li{
+  margin-bottom: 30px;
+}
+#slide-menu a{
+  text-decoration: none;
+  color: var(--accent-cool);
+}
+
+#ham{
+  background: var(--background);
+ z-index: 999;
+  position: fixed;
+  border: 2px, solid var(--accent);
+  padding: 3px 5px;
+}
+
+nav#slide-menu{
+position: fixed;  
+top: 0;
+left: -284px;
+bottom: 0;
+display: block;
+float: left;
+background: var(--background);
+width: 100%;
+max-width: 284px;
+
+-moz-transition: all 300ms;
+-webkit-transition: all 300ms;
+transition: all 300ms;
+}
+
+
+
+
+
+
+
+
+
+  
+
+/*hero-section*/
+#hero{
+  background: linear-gradient(
+  rgba(0,0,0,.6),
+  rgba(0,0,0,.6)),
+   url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5Y6yfJFZxv65SJwrRGkIcGD1RvP-Nl-PvIbhkUyKPQPBZRq9O4XeiXbji&s=10.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero .container{
+  height: 100%;
+}
+
+
+h1{
+  font-family: var(--font-display);
+  font-size: 60px;
+  color: var(--text-color);
+}
+#hero p{
+  font-family: var(--font-body);
+  font-size: 20px;
+  color: rgba(240,240,240,0.7);
+}
+#hero .btn{
+background: var(--accent);
+  color: black;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 30px;
+  font-family: var(--font-body);
+}
+
+#listen{
+  background: #0d0d0d;
+  padding: 80px 50px;
+}
+#listen h2{
+  font-family: var(--font-display);
+  font-size: 36px;
+  color: var(--accent);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.listen-card{
+  background: #1a1a1a;
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0px 10px 30px rgba(0,0,0,.5);
+}
+
+
+/*BIO-SECTION*/
+#bio{
+  padding: 80px 50px;
+  background: transparent;
+}
+#bio h2{
+  font-family: var(--font-display);
+  font-size: 36px;
+  color: var(--accent);
+}
+
+#bio p{
+  font-family: var(--font-body);
+  font-size: 17px;
+  color: rgba(240,240,240,0.7);
+  line-height: 1.7;
+}
+
+.sociallinks h3{
+  font-family: var(--font-display);
+}
+
+.sociallinks ul{
+  list-style: none;
+}
+
+.sociallinks a{
+  text-decoration: none;
+  color: var(--accent);
+}
+
+
+/*video-section*/
+.video-grid{
+  display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 30px
+}
+.video-card{
+  background: #1a1a1a;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0px 50px 10px rgba(0,0,0,.5);
+}
+
+
+/*MERCH-SECTION*/
+
+#MERCH {
+  background: #1a1a1a;
+  padding: 20px 20px;
+}
+
+#MERCH h2{
+  font-family: var(--font-display);
+  color: var(--accent);
+  font-size: 36px;
+}
+
+.product-img{
+  background: #242424;
+  border-radius: 20px;
+  padding: 10px 15px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
+  margin-bottom: 10px;
+} 
+ #MERCH .btn {
+  background: var(--accent);
+  color: black;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-family: var(--font-body);
+ }
+ 
+ 
+ /*tours-section*/
+ #tours{
+   background: transparent;
+   padding: 50px 50px;
+ }
+#tours .row{
+  border-bottom: 1px solid rgba(255,255,255,.1);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+ 
+ #tours h2{
+   font-family: var(--font-display);
+   color: var(--accent);
+   font-size: 36px;
+ }
+ #tours h4{
+   font-family: var(--font-display);
+   color: var(--accent);
+   font-size: 20px;
+ }
+ #tours p{
+   font-size: 13px;
+    font-family: var(--font-body);
+  color: rgba(240,240,240,0.7);
+ }
+ #tours a{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-decoration: none;
+   color: var(--accent);
+   margin-bottom: 20px;
+   padding: 5px 5px;
+   outline: none;
+   display: block;
+   margin-top: 20px;
+   
+ }
+ 
+ #tours .btn{
+   width: 100%;
+   max-width: 300px;
+  background: var(--accent-cool);
+  color: black;
+  border: none;
+  border-radius: 30px;
+  font-family: var(--font-body);
+  padding: 5px;
+  margin-bottom: 10px;
+  display: inline-block;
+ }
+ 
+ #interviews {
+   color: var(--accent-cool);
+ }
+ 
+@media (min-width: 992px){
+  h1{
+    font-size: 100px;
+  }
+  
+  #hero p{
+    font-size: 36px;
+  }
+  #bio .col-lg-6 {
+    max-width: 700px;
+  }
+  
+  #bio h2{
+    font-size: 66px;
+  }
+  #MERCH h2{
+    font-size: 66px;
+  }
+  #tours h2{
+    font-size: 66px;
+  }
+  #tours h4{
+    font-size: 33px;
+  }
+  #tours p{
+    font-size: 22px;
+  }
+}
+@media (max-width: 576px) {
+  .navbar-links {
+    display: none;
+  }
+}
+@media (min-width: 577px) {
+  .hamburger-btn {
+    display: none;
+  }
+}
